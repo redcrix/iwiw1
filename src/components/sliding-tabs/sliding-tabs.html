@@ -24,8 +24,57 @@
       {{c.name}}
     </ion-slide>
   </ion-slides>
-
 </div>
+
+<ion-card  class="animated fadeIn">
+  <div class="card-thumb">
+    <div class="card-tag-new"translate></div>
+    <div class="card-tags">
+      <div class="card-tag-off">{{'SALE'|translate}}</div>
+    </div> <!-- 2.0 updates -->
+    <img class="image" src="../../assets/avatar.png"  />
+  </div>
+  <ion-card-content>
+    <ion-card-title>
+      <div class="line-clamp" >name</div>
+    </ion-card-title>
+    <ion-row class="card-attr">
+      <ion-col col-10>
+        <h4 >headingTEXT</h4>
+      </ion-col>
+      <!-- <h3 *ngIf="p.type=='grouped'" no-margin dark> -->
+
+      <!-- </h3> -->
+      <ion-col text-center col-2>
+        <ion-icon ></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+
+  <ion-buttons class="bar-buttons-remove" >
+    <button ion-button block color="danger" >
+      {{'REMOVE'|translate}}
+    </button>
+  </ion-buttons>
+
+  <ion-buttons >
+    <button ion-button block color="secondary" 
+     >{{'ADD TO CART'|translate}}</button>
+    <button ion-button block color="secondary"
+      >{{'DETAILS'|translate}}</button>
+    <button ion-button block color="danger"
+      >{{'OUT OF STOCK'|translate}}</button>
+  </ion-buttons>
+
+  <ion-buttons class="bar-buttons-remove">
+    <button ion-button block color="danger">{{'REMOVE'|translate}}</button>
+  </ion-buttons>
+
+  <ion-row class="card-add-cart">
+    <ion-icon name="checkmark-circle"></ion-icon>
+  </ion-row>
+</ion-card>
+
 
 <ion-grid>
   <ion-col *ngFor="let p of products" col-6>
